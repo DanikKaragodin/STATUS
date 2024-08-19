@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:fontFamily="serif"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication2.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="1000dp"
+        android:layout_height="750dp"
+        android:src="@drawable/statuscen" />
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/default_background" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="460dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="serif"
+        android:text="Добро пожаловать в отель"
+        android:textAlignment="textEnd"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/llogo2_copy" />
+
+
+    <TextView
+        android:id="@+id/textViewTempEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="860dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:editable="false"
+        android:fontFamily="serif"
+        android:text="20 °C"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_anchorGravity="start" />
+
+    <TextView
+        android:id="@+id/textViewHumidityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="790dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0"
+        android:editable="false"
+        android:fontFamily="serif"
+        android:text="Влажность:"
+        android:textColor="@color/colorOnHover"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:buttonTint="#F1C07B"
+        android:enabled="false" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:enabled="false" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="485dp"
+        android:background="@color/default_background" />
+
+    <TextClock
+        android:id="@+id/textClock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="483dp"
+        android:fontFamily="serif"
+        android:format12Hour="kk:mm dd-MM-yyyy "
+        android:format24Hour="HH:mm dd-MM-yyyy "
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="24sp"
+        android:timeZone="Europe/Minsk" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="485dp"
+        android:fontFamily="serif"
+        android:text="Администратор: "
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="505dp"
+        android:fontFamily="serif"
+        android:text="Reception:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="485dp"
+        android:fontFamily="serif"
+        android:text="101"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/marquee"
+        android:fontFamily="serif"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="286dp"
+        android:layout_marginTop="500dp"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/btnYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/btn_bg"
+        android:text="YouTube"
+        android:textColor="@drawable/btn_txt_color" />
+
+    <Button
+        android:id="@+id/btnST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="365dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/btn_bg"
+        android:text="SmartTube"
+        android:textColor="@drawable/btn_txt_color"
+        android:textColorLink="@color/default_background" />
+
+    <Button
+        android:id="@+id/btnIPTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="553dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/btn_bg"
+        android:text="IPTV"
+        android:textColor="@drawable/btn_txt_color" />
+
+    <Button
+        android:id="@+id/btnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="647dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/btn_bg"
+        android:text="TV"
+        android:textColor="@drawable/btn_txt_color" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/qrcode_statuscenter_rooms" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
